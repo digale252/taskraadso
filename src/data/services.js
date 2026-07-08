@@ -35,7 +35,7 @@ export const services = [
     description: "High-performance, intuitive mobile applications for both iOS and Android platforms.",
     longDescription: "We build native and cross-platform mobile applications that deliver seamless user experiences. Our development process focuses on performance, security, and intuitive UI/UX design. Whether you need a consumer-facing app or an enterprise mobility solution, we bring your ideas to life on every device.",
     icon: "FaMobileAlt",
-    image: "/img/mobile app.jpg",
+    image: "/img/mobile app development.webp",
     highlights: [
       { icon: "FaApple", title: "iOS & Android" },
       { icon: "FaRocket", title: "High Performance" },

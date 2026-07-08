@@ -7,52 +7,70 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-[90vh] flex flex-col items-center justify-center pt-32 pb-20 overflow-hidden bg-white">
       
-      {/* Abstract Background Gradient - resembling the soft pinkish/yellow tone from the image */}
+      {/* Abstract Background Gradient */}
       <div className="absolute top-[-20%] left-1/2 transform -translate-x-1/2 w-[120%] h-[80%] rounded-[100%] bg-gradient-to-b from-primary/15 to-transparent blur-[100px] pointer-events-none"></div>
       
       {/* Floating Dark Mode Toggle (Mock) */}
-      <div className="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2">
+      <div className="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 z-20">
         <button className="w-10 h-10 bg-white border border-gray-200 rounded-xl flex items-center justify-center text-black shadow-sm hover:shadow-md transition-shadow">
           <FaMoon size={16} />
         </button>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 text-center relative z-10 w-full mt-8">
-        
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="flex flex-col items-center"
-        >
-          {/* Badge */}
-          <div className="mb-8 inline-block px-5 py-1.5 rounded-full border border-primary/30 bg-white text-primary text-xs font-bold tracking-widest uppercase">
-            LEADING TECH SOLUTIONS IN SOMALIA
-          </div>
+      <div className="max-w-7xl mx-auto px-6 relative z-10 w-full mt-8">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
           
-          {/* Main Title */}
-          <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold text-black leading-[1.1] mb-6 tracking-tight">
-            Let's Make Your <br />
-            <span className="text-primary inline-block mt-2">Business</span> Flourish
-          </h1>
-          
-          {/* Subtitle */}
-          <p className="text-lg md:text-xl text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Streamline operations with our tailored ERP systems, innovative software development, and comprehensive cloud services. We believe that the prospect presented by technology has never been more spacious.
-          </p>
-          
-          {/* Action / Search Input (mocking the image layout) */}
-          <div className="w-full max-w-md mx-auto relative group">
-            <input 
-              type="text" 
-              placeholder="Enter your business email" 
-              className="w-full pl-6 pr-32 py-4 rounded-full border border-gray-200 shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all bg-white"
+          {/* Left Side - Text Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1"
+          >
+            {/* Badge */}
+            <div className="mb-8 inline-block px-5 py-1.5 rounded-full border border-primary/30 bg-white text-primary text-xs font-bold tracking-widest uppercase">
+              LEADING TECH SOLUTIONS IN SOMALIA
+            </div>
+            
+            {/* Main Title */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-black leading-[1.1] mb-6 tracking-tight">
+              Let's Make Your <br />
+              <span className="text-primary inline-block mt-2">Business</span> Flourish
+            </h1>
+            
+            {/* Subtitle */}
+            <p className="text-lg md:text-xl text-gray-500 mb-12 max-w-2xl leading-relaxed">
+              Streamline operations with our tailored ERP systems, innovative software development, and comprehensive cloud services. We believe that the prospect presented by technology has never been more spacious.
+            </p>
+            
+            {/* Action / Search Input */}
+            <div className="w-full max-w-md relative group">
+              <input 
+                type="text" 
+                placeholder="Enter your business email" 
+                className="w-full pl-6 pr-32 py-4 rounded-full border border-gray-200 shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all bg-white"
+              />
+              <Button variant="primary" className="absolute right-1.5 top-1.5 bottom-1.5 px-6 rounded-full text-sm font-bold shadow-none hover:shadow-md">
+                Get Started
+              </Button>
+            </div>
+          </motion.div>
+
+          {/* Right Side - Hero Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="flex-1 flex items-center justify-center"
+          >
+            <img 
+              src="/img/hero2.png" 
+              alt="Raadso Tech - Business Technology Solutions" 
+              className="w-full max-w-lg lg:max-w-xl xl:max-w-2xl h-auto object-contain drop-shadow-2xl"
             />
-            <Button variant="primary" className="absolute right-1.5 top-1.5 bottom-1.5 px-6 rounded-full text-sm font-bold shadow-none hover:shadow-md">
-              Get Started
-            </Button>
-          </div>
-        </motion.div>
+          </motion.div>
+
+        </div>
       </div>
 
       {/* Floating WhatsApp Button */}

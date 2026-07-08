@@ -18,7 +18,7 @@ export const portfolio = [
     title: "Healthcare Portal",
     category: "Web Portal",
     description: "A secure patient portal for healthcare providers with appointment booking and telemedicine capabilities.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173d404c112?q=80&w=800&auto=format&fit=crop"
+    image: "/img/Healthcare Portal.jpg"
   },
   {
     id: 4,
