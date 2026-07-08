@@ -148,5 +148,35 @@ export const services = [
         features: ["Full SEO & Content Strategy", "Omnichannel Ad Campaigns", "Conversion Rate Optimization (CRO)", "Advanced Analytics & Reporting"]
       }
     ]
+  },
+  {
+    id: "data-analysis",
+    title: "Data Analysis",
+    description: "Transform raw data into actionable insights that drive smarter business decisions and growth.",
+    longDescription: "Our data analysis services help you unlock the hidden potential in your data. We use advanced analytical tools and techniques to collect, process, and visualize your business data. From predictive analytics to custom dashboards and reporting, we empower your team to make data-driven decisions with confidence.",
+    icon: "FaChartBar",
+    image: "/img/data analysis.png",
+    highlights: [
+      { icon: "FaDatabase", title: "Big Data" },
+      { icon: "FaChartPie", title: "Visualization" },
+      { icon: "FaBrain", title: "AI Insights" }
+    ],
+    packages: [
+      {
+        name: "Basic Analytics",
+        price: "$400/mo",
+        features: ["Data Collection & Cleaning", "Monthly Reports", "Basic Dashboard Setup", "Up to 3 Data Sources"]
+      },
+      {
+        name: "Business Intelligence",
+        price: "$900/mo",
+        features: ["Custom Interactive Dashboards", "Predictive Analytics", "Unlimited Data Sources", "Weekly Insights Reports", "Team Training"]
+      },
+      {
+        name: "Enterprise Analytics",
+        price: "$2,000/mo+",
+        features: ["AI-Powered Predictions", "Real-time Data Pipelines", "Custom ML Models", "Advanced Data Visualization", "Dedicated Data Analyst"]
+      }
+    ]
   }
 ];

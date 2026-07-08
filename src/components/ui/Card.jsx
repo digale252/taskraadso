@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Card = ({ children, className = '', animate = true, delay = 0 }) => {
   const content = (
-    <div className={`glass-card p-6 md:p-8 hover:-translate-y-2 transition-transform duration-300 ${className}`}>
+    <div className={`bg-white rounded-3xl border border-gray-100 shadow-[0_2px_20px_rgba(0,0,0,0.04)] p-6 md:p-8 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-500 ${className}`}>
       {children}
     </div>
   );
@@ -11,7 +11,7 @@ const Card = ({ children, className = '', animate = true, delay = 0 }) => {
   if (animate) {
     return (
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.5, delay }}
