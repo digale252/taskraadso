@@ -73,20 +73,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Floating WhatsApp Button */}
-      <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-50">
-        <a
-          href="https://wa.me/252610000000"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform duration-300 relative group"
-        >
-          <FaWhatsapp size={32} />
-          <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full text-white text-[10px] font-bold flex items-center justify-center border border-white">
-            1
-          </span>
-        </a>
-      </div>
 
     </section>
   );
