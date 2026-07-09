@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import * as Icons from 'react-icons/fa';
-import { FaArrowRight } from 'react-icons/fa';
+import * as Icons from 'react-icons/lu';
+import { LuArrowRight } from 'react-icons/lu';
 
 const ServiceCard = ({ service, index }) => {
-  const IconComponent = Icons[service.icon] || Icons.FaLaptopCode;
+  const IconComponent = Icons[service.icon] || Icons.LuMonitor;
 
   return (
     <Link to={`/services/${service.id}`} className="block h-full">
@@ -43,7 +43,7 @@ const ServiceCard = ({ service, index }) => {
           {/* Learn More link */}
           <div className="flex items-center gap-2 text-sm font-semibold text-gray-400 group-hover:text-black transition-all duration-300">
             <span>Learn More</span>
-            <FaArrowRight size={12} className="transform group-hover:translate-x-1 transition-transform duration-300" />
+            <LuArrowRight size={12} className="transform group-hover:translate-x-1 transition-transform duration-300" />
           </div>
         </div>
       </motion.div>

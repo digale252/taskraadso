@@ -4,12 +4,12 @@ export const services = [
     title: "Branding Services",
     description: "Crafting unique brand identities that resonate with your target audience and stand out in the market.",
     longDescription: "Our comprehensive branding services help you establish a strong, memorable identity. We dive deep into your company's values, mission, and target audience to create a cohesive brand story. From logo design and typography to comprehensive brand guidelines, we ensure every touchpoint reflects your unique brand essence.",
-    icon: "FaPaintBrush",
+    icon: "LuPalette",
     image: "/img/branding.jpg",
     highlights: [
-      { icon: "FaPenNib", title: "Unique Designs" },
-      { icon: "FaBullseye", title: "Brand Strategy" },
-      { icon: "FaChartLine", title: "Growth Focused" }
+      { icon: "LuPen", title: "Unique Designs" },
+      { icon: "LuTarget", title: "Brand Strategy" },
+      { icon: "LuTrendingUp", title: "Growth Focused" }
     ],
     packages: [
       {
@@ -34,12 +34,12 @@ export const services = [
     title: "Mobile App Development",
     description: "High-performance, intuitive mobile applications for both iOS and Android platforms.",
     longDescription: "We build native and cross-platform mobile applications that deliver seamless user experiences. Our development process focuses on performance, security, and intuitive UI/UX design. Whether you need a consumer-facing app or an enterprise mobility solution, we bring your ideas to life on every device.",
-    icon: "FaMobileAlt",
+    icon: "LuSmartphone",
     image: "/img/mobile app development.webp",
     highlights: [
-      { icon: "FaApple", title: "iOS & Android" },
-      { icon: "FaRocket", title: "High Performance" },
-      { icon: "FaShieldAlt", title: "Secure Data" }
+      { icon: "LuSmartphone", title: "iOS & Android" },
+      { icon: "LuRocket", title: "High Performance" },
+      { icon: "LuShieldCheck", title: "Secure Data" }
     ],
     packages: [
       {
@@ -64,12 +64,12 @@ export const services = [
     title: "Web Development",
     description: "Premium, modern, and highly responsive web applications tailored to your business needs.",
     longDescription: "Our web development team crafts custom, highly responsive, and scalable web applications. We utilize modern tech stacks to ensure fast load times, excellent SEO architecture, and robust security. From corporate websites to complex SaaS platforms, we deliver web solutions that drive business growth.",
-    icon: "FaLaptopCode",
+    icon: "LuMonitor",
     image: "/img/web development.jpg",
     highlights: [
-      { icon: "FaCode", title: "Clean Code" },
-      { icon: "FaMobile", title: "Responsive" },
-      { icon: "FaTachometerAlt", title: "Fast Loading" }
+      { icon: "LuCode", title: "Clean Code" },
+      { icon: "LuSmartphone", title: "Responsive" },
+      { icon: "LuGauge", title: "Fast Loading" }
     ],
     packages: [
       {
@@ -94,12 +94,12 @@ export const services = [
     title: "Web Hosting",
     description: "Secure, lightning-fast, and reliable cloud hosting solutions with 99.9% uptime.",
     longDescription: "Ensure your digital assets are always available with our premium web hosting solutions. We provide high-performance cloud environments optimized for speed and security. With automated backups, SSL certificates, and 24/7 monitoring, you can focus on your business while we handle the infrastructure.",
-    icon: "FaServer",
+    icon: "LuServer",
     image: "/img/web hosting.jpg",
     highlights: [
-      { icon: "FaClock", title: "99.9% Uptime" },
-      { icon: "FaLock", title: "SSL Secure" },
-      { icon: "FaDatabase", title: "Daily Backups" }
+      { icon: "LuClock", title: "99.9% Uptime" },
+      { icon: "LuLock", title: "SSL Secure" },
+      { icon: "LuDatabase", title: "Daily Backups" }
     ],
     packages: [
       {
@@ -124,12 +124,12 @@ export const services = [
     title: "Digital Marketing",
     description: "Data-driven marketing strategies to drastically increase your online presence and sales.",
     longDescription: "Accelerate your growth with our data-driven digital marketing campaigns. We utilize a mix of SEO, Social Media Management, PPC Advertising, and Content Strategy to maximize your ROI. Our strategies are designed to target the right audience, engage them meaningfully, and convert them into loyal customers.",
-    icon: "FaChartLine",
+    icon: "LuTrendingUp",
     image: "/img/marketing.jpg",
     highlights: [
-      { icon: "FaSearch", title: "SEO Optimized" },
-      { icon: "FaUsers", title: "Targeted Ads" },
-      { icon: "FaChartPie", title: "Data Driven" }
+      { icon: "LuSearch", title: "SEO Optimized" },
+      { icon: "LuUsers", title: "Targeted Ads" },
+      { icon: "LuPieChart", title: "Data Driven" }
     ],
     packages: [
       {
@@ -154,12 +154,12 @@ export const services = [
     title: "Data Analysis",
     description: "Transform raw data into actionable insights that drive smarter business decisions and growth.",
     longDescription: "Our data analysis services help you unlock the hidden potential in your data. We use advanced analytical tools and techniques to collect, process, and visualize your business data. From predictive analytics to custom dashboards and reporting, we empower your team to make data-driven decisions with confidence.",
-    icon: "FaChartBar",
+    icon: "LuBarChart3",
     image: "/img/data analysis.png",
     highlights: [
-      { icon: "FaDatabase", title: "Big Data" },
-      { icon: "FaChartPie", title: "Visualization" },
-      { icon: "FaBrain", title: "AI Insights" }
+      { icon: "LuDatabase", title: "Big Data" },
+      { icon: "LuPieChart", title: "Visualization" },
+      { icon: "LuBrain", title: "AI Insights" }
     ],
     packages: [
       {

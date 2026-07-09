@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaArrowLeft, FaCheckCircle } from 'react-icons/fa';
+import { LuArrowLeft, LuCircleCheck } from 'react-icons/lu';
 import { services } from '../data/services';
 import Button from '../components/ui/Button';
 
@@ -32,7 +32,7 @@ const ServiceDetail = () => {
         
         {/* Back Button */}
         <Link to="/#services" className="inline-flex items-center gap-2 text-gray-500 hover:text-primary font-medium mb-8 transition-colors">
-          <FaArrowLeft /> Back to Services
+          <LuArrowLeft /> Back to Services
         </Link>
 
         {/* Hero Section */}
@@ -85,7 +85,7 @@ const ServiceDetail = () => {
             {service.highlights && (
               <div className="absolute -bottom-6 -right-2 md:-bottom-10 md:-right-10 bg-white/90 backdrop-blur-xl rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] p-4 md:p-6 z-20 flex gap-6 md:gap-8 items-center border border-white/50 w-max">
                 {service.highlights.map((highlight, idx) => {
-                  const Icon = require('react-icons/fa')[highlight.icon] || require('react-icons/fa').FaStar;
+                  const Icon = require('react-icons/lu')[highlight.icon] || require('react-icons/lu').LuStar;
                   return (
                     <div key={idx} className="flex items-center gap-3">
                       <div className="w-10 h-10 md:w-12 md:h-12 bg-[#fff8e6] rounded-xl flex items-center justify-center text-primary flex-shrink-0">
@@ -146,7 +146,7 @@ const ServiceDetail = () => {
                     {pkg.features.map((feature, fIdx) => (
                       <li key={fIdx} className="flex items-start gap-3">
                         <div className={`mt-0.5 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center transition-colors ${isPopular ? 'bg-black/10' : 'bg-primary/10'}`}>
-                          <FaCheckCircle size={12} className={`transition-colors ${isPopular ? 'text-black' : 'text-primary'}`} />
+                          <LuCircleCheck size={12} className={`transition-colors ${isPopular ? 'text-black' : 'text-primary'}`} />
                         </div>
                         <span className={`text-sm font-medium transition-colors ${isPopular ? 'text-black/80' : 'text-gray-600'}`}>{feature}</span>
                       </li>
