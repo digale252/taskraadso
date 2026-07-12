@@ -12,7 +12,7 @@ const Partners = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-[#0a0a0a] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Header Section */}
         <motion.div
@@ -25,10 +25,10 @@ const Partners = () => {
           <div className="text-primary text-sm font-bold tracking-[0.2em] uppercase mb-4">
             Our Partners
           </div>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-[#0B132B] mb-4">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-[#0B132B] dark:text-white mb-4">
             We work with the best partners
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
+          <p className="text-gray-500 dark:text-gray-300 max-w-2xl mx-auto text-lg leading-relaxed">
             We collaborate with leading companies to build digital solutions that drive growth and innovation.
           </p>
         </motion.div>
@@ -55,8 +55,8 @@ const Partners = () => {
           </motion.div>
 
           {/* Fade Edges for smooth look */}
-          <div className="absolute top-0 bottom-0 left-0 w-16 md:w-32 bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
-          <div className="absolute top-0 bottom-0 right-0 w-16 md:w-32 bg-gradient-to-l from-white to-transparent pointer-events-none z-10"></div>
+          <div className="absolute top-0 bottom-0 left-0 w-16 md:w-32 bg-gradient-to-r from-white dark:from-[#0a0a0a] to-transparent pointer-events-none z-10"></div>
+          <div className="absolute top-0 bottom-0 right-0 w-16 md:w-32 bg-gradient-to-l from-white dark:from-[#0a0a0a] to-transparent pointer-events-none z-10"></div>
         </div>
       </div>
     </section>

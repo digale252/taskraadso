@@ -17,8 +17,8 @@ const ServiceDetail = () => {
 
   if (!service) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center pt-24 bg-gray-50">
-        <h2 className="text-3xl font-bold mb-4">Service Not Found</h2>
+      <div className="min-h-screen flex flex-col items-center justify-center pt-24 bg-gray-50 dark:bg-black transition-colors duration-300">
+        <h2 className="text-3xl font-bold text-black dark:text-white mb-4">Service Not Found</h2>
         <Link to="/">
           <Button variant="primary">Go Back Home</Button>
         </Link>
@@ -27,11 +27,11 @@ const ServiceDetail = () => {
   }
 
   return (
-    <main className="pt-32 pb-24 bg-gray-50 min-h-screen">
+    <main className="pt-32 pb-24 bg-gray-50 dark:bg-black min-h-screen transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
         
         {/* Back Button */}
-        <Link to="/#services" className="inline-flex items-center gap-2 text-gray-500 hover:text-primary font-medium mb-8 transition-colors">
+        <Link to="/#services" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-300 hover:text-primary font-medium mb-8 transition-colors">
           <LuArrowLeft /> Back to Services
         </Link>
 
@@ -49,14 +49,14 @@ const ServiceDetail = () => {
               {service.title}
             </div>
             
-            <h1 className="text-3xl md:text-5xl font-extrabold text-black leading-tight mb-4">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-black dark:text-white leading-tight mb-4">
               Elevate your business with our <br />
               <span className="text-primary block mt-1">{service.title}.</span>
             </h1>
             
             <div className="w-12 h-1 bg-primary mb-6 rounded-full"></div>
             
-            <p className="text-base text-gray-500 leading-relaxed mb-8">
+            <p className="text-base text-gray-500 dark:text-gray-300 leading-relaxed mb-8">
               {service.longDescription}
             </p>
           </motion.div>
@@ -83,7 +83,7 @@ const ServiceDetail = () => {
             
             {/* Floating Glassmorphism Highlights Card */}
             {service.highlights && (
-              <div className="absolute -bottom-6 -right-2 md:-bottom-10 md:-right-10 bg-white/90 backdrop-blur-xl rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] p-4 md:p-6 z-20 flex gap-6 md:gap-8 items-center border border-white/50 w-max">
+              <div className="absolute -bottom-6 -right-2 md:-bottom-10 md:-right-10 bg-white/90 dark:bg-[#111111]/90 backdrop-blur-xl rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] p-4 md:p-6 z-20 flex gap-6 md:gap-8 items-center border border-white/50 dark:border-white/10 w-max">
                 {service.highlights.map((highlight, idx) => {
                   const Icon = require('react-icons/lu')[highlight.icon] || require('react-icons/lu').LuStar;
                   return (
@@ -91,7 +91,7 @@ const ServiceDetail = () => {
                       <div className="w-10 h-10 md:w-12 md:h-12 bg-[#fff8e6] rounded-xl flex items-center justify-center text-primary flex-shrink-0">
                         <Icon size={18} />
                       </div>
-                      <span className="text-xs md:text-sm font-semibold text-gray-700 leading-tight">
+                      <span className="text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-200 leading-tight">
                         {highlight.title.split(' ').map((word, i) => <React.Fragment key={i}>{word}<br/></React.Fragment>)}
                       </span>
                     </div>
@@ -110,8 +110,8 @@ const ServiceDetail = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">Choose Your Package</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">Select a package that best fits your business needs, or contact us for a custom solution tailored just for you.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-white">Choose Your Package</h2>
+            <p className="text-gray-500 dark:text-gray-300 max-w-2xl mx-auto">Select a package that best fits your business needs, or contact us for a custom solution tailored just for you.</p>
           </div>
 
           <div 
@@ -127,18 +127,18 @@ const ServiceDetail = () => {
                   className={`relative rounded-[2rem] p-8 md:p-10 flex flex-col transition-all duration-300 cursor-pointer ${
                     isPopular 
                       ? 'bg-primary text-black z-20 transform md:scale-105 shadow-[0_20px_50px_rgba(243,199,21,0.4)] border-none' 
-                      : 'bg-white text-gray-600 shadow-xl border border-gray-100 z-10 md:scale-95'
+                      : 'bg-white dark:bg-[#0f0f0f] text-gray-600 dark:text-gray-300 shadow-xl border border-gray-100 dark:border-white/10 z-10 md:scale-95'
                   }`}
                 >
-                  <div className={`font-extrabold text-3xl lg:text-4xl mb-4 transition-colors ${isPopular ? 'text-black' : 'text-black'}`}>
+                  <div className={`font-extrabold text-3xl lg:text-4xl mb-4 transition-colors ${isPopular ? 'text-black' : 'text-black dark:text-white'}`}>
                     {pkg.price}
                   </div>
                   
-                  <h3 className={`text-2xl font-bold mb-4 transition-colors ${isPopular ? 'text-black' : 'text-black'}`}>
+                  <h3 className={`text-2xl font-bold mb-4 transition-colors ${isPopular ? 'text-black' : 'text-black dark:text-white'}`}>
                     {pkg.name}
                   </h3>
                   
-                  <p className={`text-sm mb-8 leading-relaxed transition-colors ${isPopular ? 'text-black/70' : 'text-gray-500'}`}>
+                  <p className={`text-sm mb-8 leading-relaxed transition-colors ${isPopular ? 'text-black/70' : 'text-gray-500 dark:text-gray-400'}`}>
                     For most businesses that want to optimize their online presence and grow.
                   </p>
                   
@@ -148,7 +148,7 @@ const ServiceDetail = () => {
                         <div className={`mt-0.5 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center transition-colors ${isPopular ? 'bg-black/10' : 'bg-primary/10'}`}>
                           <LuCircleCheck size={12} className={`transition-colors ${isPopular ? 'text-black' : 'text-primary'}`} />
                         </div>
-                        <span className={`text-sm font-medium transition-colors ${isPopular ? 'text-black/80' : 'text-gray-600'}`}>{feature}</span>
+                        <span className={`text-sm font-medium transition-colors ${isPopular ? 'text-black/80' : 'text-gray-600 dark:text-gray-300'}`}>{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -156,7 +156,7 @@ const ServiceDetail = () => {
                   <button className={`w-full rounded-full py-4 font-bold text-sm transition-all duration-300 ${
                     isPopular 
                       ? 'bg-white text-black hover:bg-gray-50 shadow-md' 
-                      : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
+                      : 'bg-gray-50 dark:bg-[#181818] text-gray-600 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-[#202020]'
                   }`}>
                     {isPopular ? 'Upgrade' : 'Select Package'}
                   </button>

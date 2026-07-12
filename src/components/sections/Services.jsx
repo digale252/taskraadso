@@ -6,7 +6,7 @@ import { services } from '../../data/services';
 
 const Services = () => {
   return (
-    <Container id="services" className="bg-white">
+    <Container id="services" className="bg-white dark:bg-black transition-colors duration-300">
       <SectionTitle 
         title="What We Do" 
         subtitle="Our Services" 

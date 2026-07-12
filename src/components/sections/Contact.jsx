@@ -8,7 +8,7 @@ import Button from '../ui/Button';
 
 const Contact = () => {
   return (
-    <Container id="contact" className="bg-white">
+    <Container id="contact" className="bg-white dark:bg-black transition-colors duration-300">
       <SectionTitle 
         title="Get in Touch" 
         subtitle="Contact Us" 
@@ -21,7 +21,7 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-3xl font-bold text-black mb-6">Let's build something amazing together.</h3>
+          <h3 className="text-3xl font-bold text-black dark:text-white mb-6">Let's build something amazing together.</h3>
           <div className="w-full mt-4">
             <img 
               src="/img/contact image.png" 
@@ -36,7 +36,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="glass-card p-8 bg-gray-50/50"
+          className="glass-card p-8 bg-gray-50/50 dark:bg-[#0f0f0f]/80 dark:border-white/10"
         >
           <form onSubmit={(e) => e.preventDefault()} className="flex flex-col gap-2">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

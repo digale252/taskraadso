@@ -17,7 +17,7 @@ const ServiceCard = ({ service, index }) => {
         className="group relative h-full"
       >
         {/* Card */}
-        <div className="relative h-full p-7 md:p-8 rounded-3xl bg-white border border-gray-100 shadow-[0_2px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgba(243,199,21,0.15)] hover:border-primary/30 transition-all duration-500 overflow-hidden cursor-pointer">
+        <div className="relative h-full p-7 md:p-8 rounded-3xl bg-white dark:bg-[#0f0f0f] border border-gray-100 dark:border-white/10 shadow-[0_2px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgba(243,199,21,0.15)] hover:border-primary/30 transition-all duration-500 overflow-hidden cursor-pointer">
           
           {/* Top gradient line accent - brand colors */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -31,17 +31,17 @@ const ServiceCard = ({ service, index }) => {
           </div>
 
           {/* Title */}
-          <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-black transition-colors duration-300">
+          <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-black dark:group-hover:text-primary transition-colors duration-300">
             {service.title}
           </h3>
 
           {/* Description */}
-          <p className="text-gray-500 leading-relaxed text-[0.95rem] mb-6">
+          <p className="text-gray-500 dark:text-gray-300 leading-relaxed text-[0.95rem] mb-6">
             {service.description}
           </p>
 
           {/* Learn More link */}
-          <div className="flex items-center gap-2 text-sm font-semibold text-gray-400 group-hover:text-black transition-all duration-300">
+          <div className="flex items-center gap-2 text-sm font-semibold text-gray-400 dark:text-gray-500 group-hover:text-black dark:group-hover:text-primary transition-all duration-300">
             <span>Learn More</span>
             <LuArrowRight size={12} className="transform group-hover:translate-x-1 transition-transform duration-300" />
           </div>

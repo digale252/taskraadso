@@ -17,7 +17,7 @@ const SectionTitle = ({ title, subtitle, centered = true }) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1 }}
-        className="text-3xl md:text-5xl font-extrabold text-black"
+        className="text-3xl md:text-5xl font-extrabold text-black dark:text-white"
       >
         {title}
       </motion.h2>

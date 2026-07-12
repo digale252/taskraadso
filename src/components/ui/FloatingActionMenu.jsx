@@ -51,7 +51,7 @@ const FloatingActionMenu = () => {
                   className="flex items-center gap-4 group cursor-pointer"
                 >
                   {/* Label */}
-                  <div className="bg-white px-5 py-2.5 rounded-xl shadow-[0_5px_15px_rgba(0,0,0,0.05)] border border-gray-50 text-sm font-bold text-gray-800 whitespace-nowrap">
+                  <div className="bg-white dark:bg-[#111111] px-5 py-2.5 rounded-xl shadow-[0_5px_15px_rgba(0,0,0,0.05)] border border-gray-50 dark:border-white/10 text-sm font-bold text-gray-800 dark:text-gray-100 whitespace-nowrap">
                     {item.label}
                   </div>
                   
